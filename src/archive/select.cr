@@ -29,7 +29,7 @@ module Archive
 			@files = [] of String
 		end
 
-		def analyse ( dir = @dirname )
+		def analyze ( dir = @dirname )
 			waiting_dirs = [] of String
 
 			Dir.foreach dir do |e|
@@ -76,13 +76,9 @@ module Archive
 			end
 
 			waiting_dirs.each do |d|
-				analyse d
+				analyze d
 			end
 		end
 
 	end
 end
-
-# a = Archive::Select.new ".///", [".git", "bin"], [] of String, ["coucou.inès"]
-# a.analyse
-# a.files

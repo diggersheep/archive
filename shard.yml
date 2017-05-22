@@ -1,0 +1,13 @@
+name: archive
+version: 0.1.0
+
+authors:
+  - diggersheep <alexandre.combeau@outlook.fr>
+
+targets:
+  archive:
+    main: src/archive.cr
+
+crystal: 0.22.0
+
+license: MIT
